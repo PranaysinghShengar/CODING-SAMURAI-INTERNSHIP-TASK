@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pranay Shengar — Web Developer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-shape s1"></div>
+  <div class="bg-shape s2"></div>
+
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">PS</div>
+        <div>
+          <div style="font-weight:800">PRANAY SHENGAR</div>
+          <div style="font-size:12px;color:var(--muted);margin-top:2px">Web Developer</div>
+        </div>
+      </div>
+
+      <nav>
+        <a href="#about">ABOUT</a>
+        <a href="#projects">PROJECTS</a>
+        <a href="#contact">CONTACT</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="intro">
+        <h1 class="reveal">Hi - I'm Pranay. <br>I build beautiful web experiences.</h1>
+        <p class="reveal" style="transition-delay:.06s">I am a passionate web developer who loves creating modern, responsive, user‑friendly websites with clean UI.</p>
+        <div class="cta reveal" style="transition-delay:.12s">
+          <a class="btn" href="#contact">Hire Me</a>
+          <a class="chip" href="https://github.com/PranaysinghShengar" target="_blank" style="margin-left:10px">GitHub</a>
+        </div>
+
+        <div style="margin-top:18px" class="reveal" style="transition-delay:.18s">
+          <div style="display:flex;gap:14px;align-items:center">
+            <div style="font-weight:700">Skills :</div>
+            <div style="color:var(--muted)">HTML • CSS • JavaScript • Bootstrap • ReactJS • Java • MySQL</div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="profile-card reveal" style="transition-delay:.1s">
+        <div class="avatar">
+            <img src="images/photo.jpg" alt="">
+        </div>
+        <div class="meta">
+          <h3>Pranay Shengar</h3>
+          <p>Web Developer - Nagpur, Maharashtra</p>
+          <div class="link-row">
+            <a class="chip" href="mailto:pranayshengar2003@gmail.com">✉️Email</a>
+            <a class="chip" href="tel:+918999052397">📞Call</a>
+            <a class="chip" href="https://www.linkedin.com/in/pranaysingh-shengar-341976287/" target="_blank">LinkedIn</a>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section id="about" class="about">
+      <div class="card reveal">
+        <h3>About Me</h3>
+        <p style="color:var(--muted)">I am a passionate web developer who loves creating modern, responsive, user‑friendly websites with clean UI. I enjoy taking designs from concept to pixel-perfect reality and continually learn new tools and frameworks.</p>
+        <div style="margin-top:12px">
+          <strong>📍Location : </strong> Nagpur, Maharashtra, India
+        </div>
+      </div>
+
+      <div class="card reveal">
+        <h3>Skills</h3>
+        <div class="skills">
+          <div class="skill">HTML</div>
+          <div class="skill">CSS</div>
+          <div class="skill">JavaScript</div>
+          <div class="skill">Bootstrap</div>
+          <div class="skill">ReactJS</div>
+          <div class="skill">Java</div>
+          <div class="skill">MySQL</div>
+          <div class="skill">Responsive Design</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <h3>Projects</h3>
+
+      <div class="proj-grid">
+        <!-- Grocery Website (user project) -->
+        <div class="project reveal" data-title="Grocery Website" data-desc="Fully responsive Bootstrap website built for a local grocery store. Features responsive product grid, cart mockup and contact form." data-tech="Bootstrap • HTML • CSS • JS">
+          <h4>Grocery Website</h4>
+          <p>A fully responsive Bootstrap website showcasing products and responsive layout.</p>
+          <div class="tech">Bootstrap • HTML • CSS • JS</div>
+        </div>
+
+        <div class="project reveal" data-title="Web Development Project - ARCANEGIT" data-desc="Interactive web development projects with landing page, portfolio and quiz app." data-tech="HTML • CSS • JavaScript">
+          <h4>Web Development Project - ARCANEGIT</h4>
+          <p>This projects is my internship. The company name is Arcane Path Tech Solution. 
+            In this development I can create Landing Page, Portfolio and Quiz App.
+          </p>
+          <div class="tech">JavaScript • HTML • CSS</div>
+        </div>
+
+        <div class="project reveal" data-title="Carvilla Website" data-desc="A Carvilla website template with dashboards and charts." data-tech="Bootstrap • JS">
+          <h4>Carvilla Website</h4>
+          <p>This website is shows the Car Showroom. You can view latest cars in this website.</p>
+          <div class="tech">Bootstrap • JS</div>
+        </div>
+
+        <div class="project reveal" data-title="Calculator" data-desc="Responsive calculations site with charts and filters built using Bootstrap." data-tech="Bootstrap • JS • Charts">
+          <h4>Calculator</h4>
+          <p>It is the digital calculator. It make using javascript.</p>
+          <div class="tech">Bootstrap • JS</div>
+        </div>
+
+        <div class="project reveal" data-title="Hospital Management System" data-desc="Console + web UI using Java and MySQL for backend data storage." data-tech="Java • MySQL">
+          <h4>Hospital Management System</h4>
+          <p>CRUD operations for patients records with exportable reports (concept & prototype).</p>
+          <div class="tech">Java • MySQL</div>
+        </div>
+
+        <div class="project reveal" data-title="Finexo (Crypto UI)" data-desc="Landing page and dashboard UI for a crypto service with charts and wallet mockups." data-tech="HTML • CSS • JS">
+          <h4>Finexo — Crypto UI</h4>
+          <p>Landing + dashboard UI demonstrating charts, balances and transactions.</p>
+          <div class="tech">HTML • CSS • JS</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal for project details -->
+    <div id="modal" class="modal" aria-hidden="true">
+      <div class="modal-card">
+        <button id="closeModal" style="float:right;padding:8px 10px;border-radius:8px;background:transparent;border:1px solid rgba(58, 135, 250, 0.856);color:var(--muted)">Close</button>
+        <h3 id="modalTitle"></h3>
+        <p id="modalDesc" style="color:var(--muted)"></p>
+        <div style="margin-top:12px"><strong>Tech:</strong> <span id="modalTech" style="color:var(--muted)"></span></div>
+        <div style="margin-top:18px">
+          <a class="btn" href="https://github.com/PranaysinghShengar" target="_blank">View on GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <section id="contact" class="projects" style="margin-top:28px">
+      <h3>Contact</h3>
+      <div class="contact-grid">
+        <div class="card reveal">
+          <h4>Get In Touch</h4>
+          <p style="color:var(--muted)">✉️Email : pranayshengar2003@gmail.com<br/>📞Phone : +91 8999052397<br/>📍Location : Nagpur, Maharashtra</p>
+          <div style="margin-top:10px" class="link-row">
+            <a class="chip" href="https://github.com/PranaysinghShengar" target="_blank">GitHub</a>
+            <a class="chip" href="https://www.linkedin.com/in/pranaysingh-shengar-341976287/" target="_blank">LinkedIn</a>
+          </div>
+        </div>
+
+        <form id="contactForm" class="card reveal">
+          <label style="font-weight:700">Send Message</label>
+          <input id="name" placeholder="Your name" required />
+          <input id="email" placeholder="Your email" type="email" required />
+          <textarea id="message" rows="5" placeholder="Message" required></textarea>
+          <button type="submit">Send Message</button>
+          <p id="formMsg" style="color:var(--muted);margin-top:8px"></p>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div>© <strong>Pranay Shengar</strong> — Web Developer</div>
+      <div style="color:var(--muted);margin-top:6px">Built with ❤️ • Built by @ Pranay Shengar</div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
